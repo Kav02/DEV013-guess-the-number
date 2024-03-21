@@ -3,17 +3,7 @@
 # pylint: disable=missing-function-docstring
 # pylint: disable=C0103
 import random
-#Generar un número aleatorio entre 1 y 100
-#secret_number= random.randint(1,100)
-#print(secret_number)
-#Ingresar el nombre del participante
-participant_name = input("Por favor ingresar su nombre?  ")
-participants = [participant_name,"Computadora"]
-participant_guess=[]
-computer_guess=[]
-#Variables globales usadas para ajustar los intentos de la computadora
-low_range = 1
-high_range = 100
+
 #Inicializar el juego
 def reset_game():
     global secret_number, participant_guess, computer_guess, attempts, low_range, high_range
@@ -26,6 +16,12 @@ def reset_game():
 
 #Resetear el juego
 reset_game()
+
+participant_name = input("Por favor ingresar su nombre?  ")
+participants = [participant_name,"Computadora"]
+participant_guess=[]
+computer_guess=[]
+attempts=0
 
 #Turnos
 def turn(player):
@@ -46,6 +42,11 @@ def turn(player):
     return player, guess
 
 #Evaluar el intento
+# Variables globales usadas para ajustar los intentos de la computadora
+low_range = 1
+high_range = 100
+
+
 def number_evaluation(player, guess):
     global low_range, high_range
     if guess == secret_number:
@@ -62,19 +63,28 @@ def number_evaluation(player, guess):
             low_range = guess
     return False
 
-# Compararlo con el número secreto
-guessing = True
-attempts = 0
-while guessing:
-    attempts += 1
-    for participant in participants:
-        playing = turn(participant)
-        RESULT = number_evaluation(playing[0], playing[1])
-        if RESULT is True:
-            play_again = input("¿Quieres jugar de nuevo? S/N ")
-            if play_again.upper() == "S":
-                reset_game()
-            else:
-                guessing = False
-                print("¡Gracias por participar!")
-                break
+
+
+    #Ingresar el nombre del participante
+
+
+def main():    
+    # Compararlo con el número secreto
+    global attempts
+    guessing = True
+    attempts = 0
+    while guessing:
+        attempts += 1
+        for participant in participants:
+            playing = turn(participant)
+            RESULT = number_evaluation(playing[0], playing[1])
+            if RESULT is True:
+                play_again = input("¿Quieres jugar de nuevo? S/N ")
+                if play_again.upper() == "S":
+                    reset_game()
+                else:
+                    guessing = False
+                    print("¡Gracias por participar!")
+                    break
+if __name__ == '__main__':
+    main()
