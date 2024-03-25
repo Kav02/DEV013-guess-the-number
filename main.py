@@ -8,17 +8,15 @@ import random
 def reset_game():
     global secret_number, participant_guess, computer_guess, attempts, low_range, high_range
     secret_number = random.randint(1, 100)
+    print("Secret number reset", secret_number)
     participant_guess = []
     computer_guess = []
     attempts = 0
     low_range = 1
-    high_range = 100
+    high_range = 40
 
-#Resetear el juego
-reset_game()
-
-participant_name = input("Por favor ingresar su nombre?  ")
-participants = [participant_name,"Computadora"]
+participant_name = ""
+participants = []
 participant_guess=[]
 computer_guess=[]
 attempts=0
@@ -68,9 +66,12 @@ def number_evaluation(player, guess):
     #Ingresar el nombre del participante
 
 
-def main():    
+def main():  
+    global participant_name, participants, attempts
+    participant_name = input("Por favor ingresar su nombre?  ")
+    participants = [participant_name,"Computadora"]
     # Compararlo con el número secreto
-    global attempts
+    
     guessing = True
     attempts = 0
     while guessing:
@@ -87,4 +88,7 @@ def main():
                     print("¡Gracias por participar!")
                     break
 if __name__ == '__main__':
+    print("Linea 91")
+    #Resetear el juego
+    reset_game()
     main()

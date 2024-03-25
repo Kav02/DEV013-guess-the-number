@@ -105,7 +105,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Python
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [X] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -113,28 +113,28 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Variables in Python - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/python-variables/)
 </p></details>
 
-- [ ] **Uso de condicionales (if, elif, ternario)**
+- [X] **Uso de condicionales (if, elif, ternario)**
 
   <details><summary>Links</summary><p>
 
   * [Conditional Statements in Python – Real Python (en inglés)](https://realpython.com/python-conditional-statements/)
 </p></details>
 
-- [ ] **Operadores (identidad, aritméticos, comparación etc)**
+- [X] **Operadores (identidad, aritméticos, comparación etc)**
 
   <details><summary>Links</summary><p>
 
   * [Python Operators - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/python-operators/)
 </p></details>
 
-- [ ] **Docstrings (y su diferencia de comentarios)**
+- [X] **Docstrings (y su diferencia de comentarios)**
 
   <details><summary>Links</summary><p>
 
   * [Docstrings - Python Docs (en inglés)](https://docs.python.org/3/tutorial/controlflow.html#documentation-strings)
 </p></details>
 
-- [ ] **Linting (pylint)**
+- [X] **Linting (pylint)**
 
   <details><summary>Links</summary><p>
 
@@ -144,7 +144,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Tipos de datos
 
-- [ ] **Tipos de datos primitivos (int, float, str, bool)**
+- [X] **Tipos de datos primitivos (int, float, str, bool)**
 
   <details><summary>Links</summary><p>
 
@@ -152,7 +152,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Data types in Python (en inglés)](https://www.educative.io/answers/data-types-in-python)
 </p></details>
 
-- [ ] **Listas (arrays)**
+- [X] **Listas (arrays)**
 
   <details><summary>Links</summary><p>
 
@@ -160,7 +160,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Lists and Tuples in Python - Real Python (en inglés)](https://realpython.com/python-lists-tuples/)
 </p></details>
 
-- [ ] **Tuples**
+- [X] **Tuples**
 
   <details><summary>Links</summary><p>
 
@@ -186,7 +186,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Funciones
 
-- [ ] **Conceptos basicos (params, args, default values, return)**
+- [X] **Conceptos basicos (params, args, default values, return)**
 
   <details><summary>Links</summary><p>
 
@@ -195,7 +195,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Iteración
 
-- [ ] **Uso de bucles/ciclos (while, for..in)**
+- [X] **Uso de bucles/ciclos (while, for..in)**
 
   <details><summary>Links</summary><p>
 
@@ -205,7 +205,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Testing en Python
 
-- [ ] **Pruebas unitarias (unit tests, unittest, pytest)**
+- [X] **Pruebas unitarias (unit tests, unittest, pytest)**
 
   <details><summary>Links</summary><p>
 
