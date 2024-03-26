@@ -48,6 +48,7 @@ aleatorio entre 1 y 100. Deben tener en cuenta la tentativa anterior, si fue
 - [Versión en Python](./docs/README-python.md)
 
   Juego de muestra :
+
   ![Juego](image-2.png)
 
 
@@ -164,11 +165,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 - [X] **Pruebas unitarias (unit tests, unittest, pytest)**
 
-      Reporte de cobertura de las pruebas
-      ![Cobertura](image.png)
+    Reporte de cobertura de las pruebas
 
-      Resultados de las pruebas
-      ![Resultados](image-1.png)
+    ![Cobertura](image.png)
+
+    Resultados de las pruebas
+
+    ![Resultados](image-1.png)
+
   <details><summary>Links</summary><p>
 
   * [unittest - Python Docs (en inglés)](https://docs.python.org/3/library/unittest.html)
