@@ -4,22 +4,26 @@
 # pylint: disable=C0103
 import random
 
-#Inicializar el juego
-def reset_game():
-    global secret_number, participant_guess, computer_guess, attempts, low_range, high_range
-    secret_number = random.randint(1, 100)
-    print("Secret number reset", secret_number)
-    participant_guess = []
-    computer_guess = []
-    attempts = 0
-    low_range = 1
-    high_range = 40
-
+# Inicializar variables globales
 participant_name = ""
 participants = []
 participant_guess=[]
 computer_guess=[]
 attempts=0
+secret_number = ""
+low_range = 1
+high_range = 100
+
+#Inicializar el juego
+def reset_game():
+    global secret_number, participant_guess, computer_guess, attempts, low_range, high_range
+    secret_number = random.randint(1, 100)
+    participant_guess = []
+    computer_guess = []
+    attempts = 0
+    low_range = 1
+    high_range = 100
+
 
 #Turnos
 def turn(player):
@@ -40,11 +44,6 @@ def turn(player):
     return player, guess
 
 #Evaluar el intento
-# Variables globales usadas para ajustar los intentos de la computadora
-low_range = 1
-high_range = 100
-
-
 def number_evaluation(player, guess):
     global low_range, high_range
     if guess == secret_number:
@@ -59,19 +58,17 @@ def number_evaluation(player, guess):
         print("El número es muy bajo")
         if guess > low_range:
             low_range = guess
+
     return False
 
-
+def main():
+    global participant_name, participants, attempts
 
     #Ingresar el nombre del participante
-
-
-def main():  
-    global participant_name, participants, attempts
     participant_name = input("Por favor ingresar su nombre?  ")
     participants = [participant_name,"Computadora"]
+
     # Compararlo con el número secreto
-    
     guessing = True
     attempts = 0
     while guessing:
@@ -88,7 +85,6 @@ def main():
                     print("¡Gracias por participar!")
                     break
 if __name__ == '__main__':
-    print("Linea 91")
     #Resetear el juego
     reset_game()
     main()
